@@ -1,0 +1,86 @@
+:root {
+  color-scheme: light;
+  --cream: #f7e8c6;
+  --red: #7f1d24;
+  --green: #174c3b;
+  --ink: #271812;
+  font-family: ui-rounded, "Arial Rounded MT Bold", Arial, sans-serif;
+}
+
+* { box-sizing: border-box; }
+
+body {
+  min-width: 320px;
+  min-height: 100vh;
+  min-height: 100svh;
+  margin: 0;
+  color: var(--ink);
+  background:
+    radial-gradient(circle at 18% 18%, rgba(127, 29, 36, 0.08) 0 0.2rem, transparent 0.25rem),
+    var(--cream);
+  background-size: 2rem 2rem;
+}
+
+main {
+  min-height: 100vh;
+  min-height: 100svh;
+  display: grid;
+  place-content: center;
+  justify-items: center;
+  gap: 1.5rem;
+  padding: 2rem;
+  text-align: center;
+}
+
+.seal {
+  width: clamp(9rem, 34vw, 14rem);
+  aspect-ratio: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border: 0.28rem solid var(--red);
+  border-radius: 50%;
+  outline: 0.12rem solid var(--green);
+  outline-offset: 0.5rem;
+  color: var(--red);
+  line-height: 1;
+  transform: rotate(-3deg);
+}
+
+.seal-top,
+.seal-bottom {
+  font-size: clamp(0.72rem, 2.3vw, 0.95rem);
+  font-weight: 800;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+}
+
+.seal-center {
+  margin: 0.25rem 0;
+  color: var(--green);
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: clamp(3rem, 12vw, 5.2rem);
+  font-weight: 800;
+  letter-spacing: -0.1em;
+}
+
+h1 {
+  margin: 1rem 0 0;
+  color: var(--red);
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: clamp(3rem, 11vw, 7.5rem);
+  font-weight: 800;
+  letter-spacing: -0.06em;
+  line-height: 0.88;
+}
+
+h1 span { display: block; color: var(--green); }
+
+p {
+  margin: 0;
+  font-size: 0.75rem;
+  font-weight: 800;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+}
